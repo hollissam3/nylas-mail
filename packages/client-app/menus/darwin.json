@@ -88,7 +88,7 @@
   {
     "label": "Développement",
     "submenu": [
-      { "label": "Run with Debug Flags", "type": "checkbox", "command": "application:toggle-dev" },
+      { "label": "Exécuter avec les signaux de débogage", "type": "checkbox", "command": "application:toggle-dev" },
       { "type": "separator" },
       { "label": "Actualiser", "command": "window:reload" },
       { "label": "Activer/désactiver les outils de développement", "command": "window:toggle-dev-tools" },
