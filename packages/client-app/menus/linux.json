@@ -1,101 +1,101 @@
 {
   "menu": [
     {
-      "label": "&File",
+      "label": "&Fichier",
       "submenu": [
-        { "label": "&New Message...", "command": "application:new-message" },
+        { "label": "&Nouveau message...", "command": "application:new-message" },
         { "type": "separator" },
-        { "label": "Add Account...", "command": "application:add-account", "args": {"source": "Menu"}},
-        { "label": "Clos&e Window", "command": "window:close" },
+        { "label": "Ajouter un compte...", "command": "application:add-account", "args": {"source": "Menu"}},
+        { "label": "Ferm&er la fenêtre", "command": "window:close" },
         { "type": "separator" },
-        { "label": "Print Current Thread...", "command": "core:print-thread" },
+        { "label": "Imprimer le fil actuel...", "command": "core:print-thread" },
         { "type": "separator" },
-        { "label": "Quit", "command": "application:quit" }
+        { "label": "Quitter", "command": "application:quit" }
       ]
     },
 
     {
-      "label": "&Edit",
+      "label": "&Édition",
       "submenu": [
-        { "label": "&Undo", "command": "core:undo" },
-        { "label": "&Redo", "command": "core:redo" },
+        { "label": "Ann&uler", "command": "core:undo" },
+        { "label": "&Rétablir", "command": "core:redo" },
         { "type": "separator" },
-        { "label": "&Cut", "command": "core:cut" },
-        { "label": "C&opy", "command": "core:copy" },
-        { "label": "&Paste", "command": "core:paste" },
-        { "label": "Paste and Match Style", "command": "core:paste-and-match-style" },
-        { "label": "Select &All", "command": "core:select-all" },
+        { "label": "&Couper", "command": "core:cut" },
+        { "label": "C&opier", "command": "core:copy" },
+        { "label": "Coller", "command": "core:paste" },
+        { "label": "Coller et adapter le style", "command": "core:paste-and-match-style" },
+        { "label": "Tout sélectionner", "command": "core:select-all" },
         { "type": "separator" },
-        { "label": "Find", "submenu": [
-          { "label": "Find in Thread...", "command": "core:find-in-thread" },
-          { "label": "Find Next", "command": "core:find-in-thread-next" },
-          { "label": "Find Previous", "command": "core:find-in-thread-previous" }
+        { "label": "Rechercher", "submenu": [
+          { "label": "Rechercher dans le fil...", "command": "core:find-in-thread" },
+          { "label": "Prochain résultat", "command": "core:find-in-thread-next" },
+          { "label": "Résultat précédent", "command": "core:find-in-thread-previous" }
         ]},
         { "type": "separator" },
-        { "label": "Preferences", "command": "application:open-preferences" },
-        { "label": "Change Theme...", "command": "window:launch-theme-picker" },
-        { "label": "Install Theme...", "command": "application:install-package" }
+        { "label": "Préférences", "command": "application:open-preferences" },
+        { "label": "Changer de thème...", "command": "window:launch-theme-picker" },
+        { "label": "Installer un thème...", "command": "application:install-package" }
       ]
     },
 
     {
-      "label": "&View",
+      "label": "Affichage",
       "submenu": [
         { "type": "separator", "id": "mailbox-navigation"},
-        { "label": "Go to Inbox", "command": "navigation:go-to-inbox" },
-        { "label": "Go to Starred", "command": "navigation:go-to-starred" },
-        { "label": "Go to Sent", "command": "navigation:go-to-sent" },
-        { "label": "Go to Drafts", "command": "navigation:go-to-drafts" },
-        { "label": "Go to All mail", "command": "navigation:go-to-all" },
+        { "label": "Afficher la boîte de réception", "command": "navigation:go-to-inbox" },
+        { "label": "Afficher les messages marqués", "command": "navigation:go-to-starred" },
+        { "label": "Afficher les messages envoyés", "command": "navigation:go-to-sent" },
+        { "label": "Afficher les brouillons", "command": "navigation:go-to-drafts" },
+        { "label": "Afficher tous les messages", "command": "navigation:go-to-all" },
         { "type": "separator" },
-        { "label": "Enter Full Screen", "command": "window:toggle-full-screen" },
-        { "label": "Exit Full Screen", "command": "window:toggle-full-screen", "visible": false }
+        { "label": "Activer le mode plein écran", "command": "window:toggle-full-screen" },
+        { "label": "Quitter le mode plein écran", "command": "window:toggle-full-screen", "visible": false }
       ]
     },
 
     {
-      "label": "Thread",
+      "label": "Fil",
       "submenu": [
-        { "label": "Reply", "command": "core:reply" },
-        { "label": "Reply All", "command": "core:reply-all" },
-        { "label": "Forward", "command": "core:forward" },
+        { "label": "Répondre", "command": "core:reply" },
+        { "label": "Répondre à tous", "command": "core:reply-all" },
+        { "label": "Réexpédier", "command": "core:forward" },
         { "type": "separator" },
-        { "label": "Star", "command": "core:star-item" },
+        { "label": "Marquer", "command": "core:star-item" },
         { "type": "separator", "id": "thread-actions" },
-        { "label": "Remove from view", "command": "core:remove-from-view" },
+        { "label": "Archiver", "command": "core:remove-from-view" },
         { "type": "separator", "id": "view-actions" }
       ]
     },
     {
-      "label": "Developer",
+      "label": "Développement",
       "submenu": [
-        { "label": "Run with &Debug Flags", "type": "checkbox", "command": "application:toggle-dev" },
+        { "label": "Exécuter avec les signaux de &débogage", "type": "checkbox", "command": "application:toggle-dev" },
         { "type": "separator" },
-        { "label": "Reload", "command": "window:reload" },
-        { "label": "Toggle Developer &Tools", "command": "window:toggle-dev-tools" },
-        { "label": "Toggle Component Regions", "command": "window:toggle-component-regions" },
-        { "label": "Toggle Screenshot Mode", "command": "window:toggle-screenshot-mode" },
+        { "label": "Actualiser", "command": "window:reload" },
+        { "label": "Activer/désactiver les ou&tils de développement", "command": "window:toggle-dev-tools" },
+        { "label": "Activer/désactiver les zones composants", "command": "window:toggle-component-regions" },
+        { "label": "Activer/désactiver le mode de capture d'écran", "command": "window:toggle-screenshot-mode" },
         { "type": "separator" },
-        { "label": "Create a Plugin...", "command": "application:create-package" },
-        { "label": "Install a Plugin...", "command": "application:install-package" },
+        { "label": "Créer un module...", "command": "application:create-package" },
+        { "label": "Installer un module...", "command": "application:install-package" },
         { "type": "separator" },
-        { "label": "Open Detailed Logs", "command": "window:open-errorlogger-logs" }
+        { "label": "Ouvrir le journal d'événements détaillé", "command": "window:open-errorlogger-logs" }
       ]
     },
     {
-      "label": "Window",
+      "label": "Fenêtre",
       "submenu": [
-        { "label": "Minimize", "command": "application:minimize" },
+        { "label": "Minimiser", "command": "application:minimize" },
         { "label": "Zoom", "command": "application:zoom" },
         { "type": "separator", "id": "window-list-separator" }
       ]
     },
     {
-      "label": "&Help",
+      "label": "Aide",
       "submenu": [
         { "label": "VERSION", "enabled": false },
         { "type": "separator" },
-        { "label": "Nylas Mail Help", "command": "application:view-help" }
+        { "label": "Aide Nylas Mail (en anglais)", "command": "application:view-help" }
       ]
     }
   ]

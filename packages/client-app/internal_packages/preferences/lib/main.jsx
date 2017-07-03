@@ -13,37 +13,37 @@ import PreferencesIdentity from './tabs/preferences-identity';
 export function activate() {
   PreferencesUIStore.registerPreferencesTab(new PreferencesUIStore.TabItem({
     tabId: 'General',
-    displayName: 'General',
+    displayName: 'Général',
     component: PreferencesGeneral,
     order: 1,
   }))
   PreferencesUIStore.registerPreferencesTab(new PreferencesUIStore.TabItem({
     tabId: 'Accounts',
-    displayName: 'Accounts',
+    displayName: 'Comptes',
     component: PreferencesAccounts,
     order: 2,
   }))
   PreferencesUIStore.registerPreferencesTab(new PreferencesUIStore.TabItem({
     tabId: 'Subscription',
-    displayName: 'Subscription',
+    displayName: 'Abonnement',
     component: PreferencesIdentity,
     order: 3,
   }))
   PreferencesUIStore.registerPreferencesTab(new PreferencesUIStore.TabItem({
     tabId: 'Appearance',
-    displayName: 'Appearance',
+    displayName: 'Apparence',
     component: PreferencesAppearance,
     order: 4,
   }))
   PreferencesUIStore.registerPreferencesTab(new PreferencesUIStore.TabItem({
     tabId: 'Shortcuts',
-    displayName: 'Shortcuts',
+    displayName: 'Raccouris',
     component: PreferencesKeymaps,
     order: 5,
   }))
   // PreferencesUIStore.registerPreferencesTab(new PreferencesUIStore.TabItem({
   //   tabId: 'Mail Rules',
-  //   displayName: 'Mail Rules',
+  //   displayName: 'Règles',
   //   component: PreferencesMailRules,
   //   order: 6,
   // }))

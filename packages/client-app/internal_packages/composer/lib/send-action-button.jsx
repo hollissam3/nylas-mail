@@ -44,7 +44,7 @@ class SendActionButton extends React.Component {
     return (
       <span>
         <RetinaImg name="icon-composer-send.png" mode={RetinaImg.Mode.ContentIsMask} />
-        <span className="text">Send{plusHTML}</span>{additionalImg}
+        <span className="text">Envoyer{plusHTML}</span>{additionalImg}
       </span>
     );
   }
