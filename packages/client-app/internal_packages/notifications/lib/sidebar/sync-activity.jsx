@@ -93,7 +93,7 @@ export default class SyncActivity extends React.Component {
         key="sync-activity"
         onClick={() => (this.setState({expanded: !this.state.expanded}))}
       >
-        <div className="inner clickable">Syncing your mailbox{ellipses}</div>
+        <div className="inner clickable">Synchronisation en cours{ellipses}</div>
         {this.state.expanded ? this._renderExpandedDetails() : false}
       </div>
     )
