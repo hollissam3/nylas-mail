@@ -45,7 +45,7 @@
         { "label": "Afficher la boîte de réception", "command": "navigation:go-to-inbox" },
         { "label": "Afficher les messages marqués", "command": "navigation:go-to-starred" },
         { "label": "Afficher les messages envoyés", "command": "navigation:go-to-sent" },
-        { "label": "Afficher les brouillon", "command": "navigation:go-to-drafts" },
+        { "label": "Afficher les brouillons", "command": "navigation:go-to-drafts" },
         { "label": "Afficher tous les messages", "command": "navigation:go-to-all" },
         { "type": "separator" },
         { "label": "Activer le mode plein écran", "command": "window:toggle-full-screen" },
